@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 function BodySection2() {
   return(
@@ -39,10 +40,12 @@ function BodySection2() {
                 <div className={styles.openright}>
                     <h1 className={styles.whyhire}>Why hire a<br /> technical writer<br /> on Docsera?</h1>
                     <p className={styles.whyhire2}>Hiring on Doscera is very straightforward, you can<br /> complete your hiring process with just 4 clicks.</p>
-                    <div className={styles.button}>
-                        <div className={styles.buttondiv}><p className={styles.butontext}>Get Started</p></div>
-                        <div><img src="/arrow.png" alt="arrow" /></div>
-                    </div>
+                    <Link href="/dashboard">
+                        <div className={styles.button}>
+                            <div className={styles.buttondiv}><p className={styles.butontext}>Get Started</p></div>
+                            <div><img src="/arrow.png" alt="arrow" /></div>
+                        </div>
+                    </Link>
                 </div>
             </div>
             {/*  */}
