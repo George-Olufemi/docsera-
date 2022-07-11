@@ -36,6 +36,7 @@
   font-size: 18px;
   line-height: 120.5%;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .button1:hover {
@@ -53,6 +54,7 @@
   font-size: 18px;
   line-height: 120.5%;
   color: white;
+  cursor: pointer;
 }
 
 .button2:hover {
@@ -71,7 +73,7 @@
 .main {
   padding-left: 200px;
   padding-right: 118px;
-  margin-right: 150px;;
+  /* margin-right: 100px;; */
 }
 
 .orient {
@@ -96,6 +98,7 @@
 
 .heroLinks {
   padding-top: 77px;
+  display: flex;
 }
 
 .heroButton1 {
@@ -110,6 +113,7 @@
   line-height: 120.5%;
   letter-spacing: 0.005em;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .heroButton1:hover {
@@ -129,6 +133,7 @@
   font-size: 18px;
   line-height: 120.5%;
   letter-spacing: 0.005em;
+  cursor: pointer;
 }
 
 .heroButton2:hover {
@@ -199,7 +204,7 @@
 }
 
 .woman {
-  margin-top: -300px;
+  margin-top: -390px;
 }
 
 .womanImage {
@@ -209,22 +214,479 @@
 
 .fill {
   position: absolute;
-  top: 330px;
+  top: 290px;
   animation: up-down 10s linear infinite;
 }
 
 @keyframes up-down {
   0%, 100% {
-    transform: translateY(-10%)
+    transform: translateY(-9%)
   }
   50% {
-    transform: translateY(2%);
+    transform: translateY(1%);
   }
 }
 
 .imageFill {
   width: 500px;
 }
+
+.bodySection {
+  height: auto;
+  background-color: white;
+  padding-bottom: 90px;
+}
+
+.hire {
+  align-items: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.hireText {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 50px;
+  align-items: center;
+  text-align: center;
+  color: rgb(32, 32, 32);
+  line-height: 120.5%;
+  padding-top: 40px;
+}
+
+.subHireText {
+  font-weight: 600;
+  text-align: center;
+  font-size: 19px;
+  line-height: 120.5%;
+  color: rgb(32, 32, 32);
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.firstbox {
+  width: 250px;
+  height: 250px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  color: #26262E;
+  padding: 10px;
+  min-height: auto;
+  min-width: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.firstbox:hover {
+  border: 1px solid #51BE7A;
+  transition: 0.9s ease-in-out;
+  box-shadow: 1px 1px 9px lightgray;
+}
+
+.firstbox:hover .pen::before {
+  transition: 0.5s linear;
+  transform: translate(9px, -5px);
+}
+
+.dunno {
+  display: flex;
+  justify-content: center;
+}
+
+.pen {
+  background: rgba(81, 190, 122, 0.1);
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.pen::before {
+  content: "";
+  background: rgba(81, 190, 122, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+.pensvg {
+  width: 50px;
+  height: 50px;
+  margin-top: 7px;
+}
+
+/* .inner1 {
+  background: rgba(81, 190, 122, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-top: 12px;
+  margin-left: -35px;
+  transform: translate(20px, -7px);
+} */
+
+.secondbox {
+  width: 250px;
+  height: 250px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  color: #26262E;
+  padding: 10px;
+  min-height: auto;
+  min-width: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.secondbox:hover {
+  border: 1px solid rgba(255, 153, 0, 0.1);
+  transition: 0.9s ease-in-out;
+  box-shadow: 1px 1px 9px lightgray;
+}
+
+.secondbox:hover .tick::before {
+  transition: 0.5s linear;
+  transform: translate(9px, -5px);
+}
+
+.tick {
+  background: rgba(220, 132, 0, 0.1);
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.tick::before {
+  content: "";
+  background: rgba(220, 132, 0, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+.inner2 {
+  background: rgba(255, 153, 0, 0.1);;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-top: 12px;
+  margin-left: -35px;
+  /* transform: translate(20px, -7px); */
+}
+
+.thirdbox {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-top: 6px;
+  color: #26262E;
+  padding: 10px;
+  min-height: auto;
+  min-width: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.thirdbox:hover {
+  border: 1px solid #51BE7A;
+  transition: 0.9s ease-in-out;
+  box-shadow: 1px 1px 9px lightgray;
+}
+
+.thirdbox:hover .pen::before {
+  transition: 0.5s linear;
+  transform: translate(9px, -5px);
+}
+
+.ellipse {
+  background: rgba(81, 190, 122, 0.1);
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inner3 {
+  background: rgba(81, 190, 122, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-top: 12px;
+  margin-left: -35px;
+}
+
+.fourthbox {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-top: 6px;
+  color: #26262E;
+  padding: 10px;
+  min-height: auto;
+  min-width: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.fourthbox:hover {
+  border: 1px solid #51BE7A;
+  transition: 2s ease-out 100ms;
+  box-shadow: 1px 1px 9px lightgray;
+}
+
+.fourthbox:hover .pen::before {
+  transition: 0.5s linear;
+  transform: translate(9px, -5px);
+}
+
+.pensvg {
+  width: 40px;
+}
+
+.bodySection2 {
+  height: auto;
+  background-color: white;
+  padding-bottom: 150px;
+}
+
+.cardsection1 {
+  display: flex;
+  justify-content: center;
+  padding-left: 242px;
+  padding-right: 242px;
+  margin-top: 100px;
+}
+
+.card1 {
+  width: 453px;
+  height: 241px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 1px 1px 29px 3px rgba(74, 74, 74, 0.06);
+  border: 1px solid transparent;
+  margin-right: 23.5px;
+  cursor: pointer;
+  padding: 1px;
+}
+
+.card1:hover {
+  border: 1px solid #51BE7A;
+  transition: 0.9s ease-in-out 100ms;
+}
+
+
+.card2 {
+  width: 453px;
+  height: 241px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 1px 1px 29px 3px rgba(74, 74, 74, 0.06);
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 1px;
+}
+
+.card2:hover {
+  border: 1px solid #51BE7A;
+  transition: 0.9s ease-in-out 100ms;
+}
+
+.cardheading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120.5%;
+  color: #4B4B4B;
+  padding-top: 50px;
+  padding-left: 73px;
+}
+
+.cardtext {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 154%;
+  color: #4B4B4B;
+  padding-left: 73px;
+}
+
+.cardsection2 {
+  display: flex;
+  justify-content: center;
+  padding-left: 242px;
+  padding-right: 242px;
+  margin-top: 30px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.openleft {
+  margin-right: 47px;
+}
+
+.openright {
+  margin-left: 47px;
+}
+
+.persondetails {
+  width: 534px;
+  height: 402px;
+}
+
+.whyhire {
+margin: 0;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 120.5%;
+color: #272727;
+}
+
+.whyhire2 {
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 120.5%;
+color: #4B4B4B;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 202px;
+  height: 62px;
+  background: #FFB117;
+  border: 1px solid #FFB117;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* .button:hover {
+  background-color: white;
+  color: #FFB117;
+} */
+
+.buttondiv {
+  margin-right: 10px;
+}
+
+.butontext {
+margin: 0;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 120.5%;
+letter-spacing: 0.005em;
+color: #FFFFFF;
+}
+
+/* .butontext:hover {
+  color: #FFB117;
+} */
+
+.lastcardbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.lastcard1 {
+  width: 526px;
+  height: 249px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 29px 3px rgba(74, 74, 74, 0.06);
+  margin-right: 19px;
+}
+
+.lastcard1:hover {
+  border: 1px solid #51BE7A;
+  transition: 0.9s ease-in-out 100ms;
+}
+
+.lastcardheadertext1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120.5%;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.lastcardtext1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 139%;
+  padding-left: 60px;
+}
+
+.lastcard2 {
+  width: 526px;
+  height: 249px;
+  background-color: #19723A;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 29px 3px rgba(74, 74, 74, 0.06);
+  margin-left: 10px;
+}
+
+.lastcard2:hover {
+  border: 1px solid #51BE7A;
+  transition: 0.9s ease-in-out 100ms;
+}
+
+.lastcardheadertext2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120.5%;
+  padding-top: 40px;
+  padding-left: 60px;
+  color: white;
+}
+
+.lastcardtext2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 139%;
+  padding-left: 60px;
+  color: white;
+}
+
+
 
 @media (max-width: 600px) {
   .grid {
