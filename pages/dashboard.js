@@ -240,7 +240,7 @@ const Button = styled.div`
 `
 
 const RightContent = styled.div`
-    width: 1160px;
+    width: 100vw;
     height: 100vh;
     background-color: white;
 `

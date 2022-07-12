@@ -11,7 +11,7 @@ export default function RightContentDetails() {
             <input type="text" placeholder="Search for a candidate" />
           </InputDiv>
           <Avatar>
-          <h5>James</h5>
+          <h5>Emmanuel</h5>
           <img src="/avatar.png" alt="Avatar" />
           </Avatar>
         </Appbar>
@@ -24,12 +24,50 @@ export default function RightContentDetails() {
         <Card>
           <LeftContent>
             <h1>Why hire a technical writer on Docsera?</h1>
-            <p>Hiring on Docsera is ery straightforward, you can<br /> complete your hiring process with just four clicks.</p>
+            <p>Hiring on Docsera is very straightforward, you can<br /> complete your hiring process with just 4 clicks.</p>
           </LeftContent>
           <RightContent>
             <img src="/OBJECTS.png" alt="objects" />
           </RightContent>
         </Card>
+        {/*  */}
+        <CardComponents>
+          <ComponentOne>
+            <View>
+              <h6>view list</h6>
+              <img src="/uparrow.png" alt="arrow" />
+            </View>
+            <Person>
+              <img src="/users.png" alt="User" />
+            </Person>
+            <h1>67</h1>
+            <p>Candidates Matched</p>
+          </ComponentOne>
+          <ComponentTwo>
+            <SubCardOne>
+              <Head>
+                <BagDiv>
+                  <img src="/officebag.png" alt="Office Bag" />
+                </BagDiv>
+                <ViewTwo>
+                  <h6>view list</h6>
+                  <img src="/uparrow.png" alt="arrow" />
+                </ViewTwo>
+              </Head>
+            </SubCardOne>
+            <SubCardOne>
+              
+            </SubCardOne>
+          </ComponentTwo>
+          <ComponentThree>
+            <SubCardThree>
+
+            </SubCardThree>
+            <SubCardThree>
+
+            </SubCardThree>
+          </ComponentThree>
+        </CardComponents>
       </Container>
     </>
   );
@@ -37,7 +75,7 @@ export default function RightContentDetails() {
 
 
 const Container = styled.div`
-  padding-top: 59px;
+  padding-top: 20px;
   padding-left: 90px;
   padding-right: 90px;
 `
@@ -111,8 +149,8 @@ const Welcome = styled.div`
 const Card = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
-  width: 980px;
+  margin-top: 20px;
+  /* width: 980px; */
   height: 215px;
   background: #FFFFFF;
   box-shadow: 0px 7px 20px rgba(151, 151, 151, 0.25);
@@ -142,4 +180,152 @@ const LeftContent = styled.div`
 
 const RightContent = styled.div`
 
+`
+
+const CardComponents = styled.div`
+  margin-top: 30px;
+  height: 314px;
+  display: flex;
+  justify-content: space-between;
+`
+
+const ComponentOne = styled.div`
+  width: 377px;
+  height: 314px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 18px rgba(151, 151, 151, 0.38);
+  border-radius: 10px;
+  margin-right: 34px;
+  h1 {
+    margin-left: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 101.5%;
+    color: #313131;
+  }
+  p{
+    padding-left: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 101.5%;
+    color: #313131;
+  }
+`
+
+const View = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 49.64px;
+  /* margin-top: 30px; */
+  h6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #1B1D4E;
+  }
+`
+
+const Person = styled.div`
+  width: 74px;
+  height: 74px;
+  background: rgba(224, 255, 235, 0.7);
+  border-radius: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  margin-left: 39px;
+  img {
+    position: relative;
+    top: 12px;
+    left: 16px;
+  }
+  &::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 2px;
+    background: rgba(224, 255, 235, 0.7);
+  }
+`
+
+const ComponentTwo = styled.div`
+  width: 269px;
+  margin-right: 40px;
+`
+
+const SubCardOne = styled.div`
+  width: 269px;
+  height: 135px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 18px rgba(151, 151, 151, 0.25);
+  border-radius: 10px;
+  margin-bottom: 40px;
+`
+
+const Head = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const BagDiv = styled.div`
+  width: 32px;
+  height: 32px;
+  background: #FFF3E0;
+  border-radius: 100%;
+  margin-top: 24px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;  
+    background: rgba(255, 243, 224, 0.5);;  
+  }
+`
+
+const ViewTwo = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 13.27px;
+  /* margin-top: 30px; */
+  h6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #1B1D4E;
+  }
+`
+
+const ComponentThree = styled.div`
+  width: 269px;
+`
+const SubCardThree = styled.div`
+  width: 269px;
+  height: 135px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 18px rgba(151, 151, 151, 0.25);
+  border-radius: 10px;
+  margin-bottom: 40px;
 `
