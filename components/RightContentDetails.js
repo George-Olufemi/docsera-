@@ -54,17 +54,69 @@ export default function RightContentDetails() {
                   <img src="/uparrow.png" alt="arrow" />
                 </ViewTwo>
               </Head>
+              <Div>
+                <h1>20</h1>
+                <div>
+                  <h4>Candidates</h4>
+                  <p>Hired</p>
+                </div>
+              </Div>
             </SubCardOne>
             <SubCardOne>
-              
+            <Head>
+                <MemoDiv>
+                  <img src="/memo.png" alt="Office Bag" />
+                </MemoDiv>
+                <ViewTwo>
+                  <h6>view list</h6>
+                  <img src="/uparrow.png" alt="arrow" />
+                </ViewTwo>
+              </Head>
+              <Div>
+                <h1>20</h1>
+                <div>
+                  <h4>Writers Leads</h4>
+                  <p>Created</p>
+                </div>
+              </Div>
             </SubCardOne>
           </ComponentTwo>
           <ComponentThree>
             <SubCardThree>
-
+            <Head>
+                <XDiv>
+                  <img src="/x.png" alt="Office Bag" />
+                </XDiv>
+                <ViewTwo>
+                  <h6>view list</h6>
+                  <img src="/uparrow.png" alt="arrow" />
+                </ViewTwo>
+              </Head>
+              <Div>
+                <h1>20</h1>
+                <div>
+                  <h4>Rejected</h4>
+                  <p>Candidates Name</p>
+                </div>
+              </Div>
             </SubCardThree>
             <SubCardThree>
-
+            <Head>
+                <PlusDiv>
+                  <img src="/plus.png" alt="Office Bag" />
+                </PlusDiv>
+                <ViewTwo>
+                  <h6>view list</h6>
+                  <img src="/uparrow.png" alt="arrow" />
+                </ViewTwo>
+              </Head>
+              <Div>
+                <h1>20</h1>
+                <div>
+                  <h4>New Order</h4>
+                  <p>Candidates Name</p>
+                </div>
+              </Div>
             </SubCardThree>
           </ComponentThree>
         </CardComponents>
@@ -301,6 +353,72 @@ const BagDiv = styled.div`
   }
 `
 
+const MemoDiv = styled.div`
+  width: 32px;
+  height: 32px;
+  background: #D1FFE2;
+  border-radius: 100%;
+  margin-top: 24px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;  
+    background: rgba(209, 255, 226, 0.5);  
+  }
+`
+
+const XDiv = styled.div`
+  width: 32px;
+  height: 32px;
+  background: #FFD7D7;
+  border-radius: 100%;
+  margin-top: 24px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;  
+    background: rgba(255, 215, 215, 0.5);  
+  }
+`
+
+const PlusDiv = styled.div`
+  width: 32px;
+  height: 32px;
+  background: #D9E8FF;
+  border-radius: 100%;
+  margin-top: 24px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;  
+    background: rgba(217, 231, 255, 0.4);  
+  }
+`
+
 const ViewTwo = styled.div`
   display: flex;
   justify-content: end;
@@ -315,6 +433,42 @@ const ViewTwo = styled.div`
   line-height: 14px;
   letter-spacing: -0.04em;
   color: #1B1D4E;
+  }
+`
+
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 22px;
+  h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 101.5%;
+    color: #313131;
+    margin-right: 7px;
+  }
+  h4 {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0F1231;
+  }
+  p {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #0F1231;
   }
 `
 
