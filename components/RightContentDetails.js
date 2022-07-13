@@ -179,7 +179,6 @@ const Avatar = styled.div`
 
 const Welcome = styled.div`
   h1 {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -188,7 +187,6 @@ const Welcome = styled.div`
     margin-bottom: 20px;
   }
   p {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -213,7 +211,6 @@ const LeftContent = styled.div`
   padding-top: 59px;
   padding-left: 60px;
   h1 {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -221,7 +218,6 @@ const LeftContent = styled.div`
     color: #474747;
   }
   p {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -250,7 +246,6 @@ const ComponentOne = styled.div`
   margin-right: 34px;
   h1 {
     margin-left: 50px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 55px;
@@ -259,7 +254,6 @@ const ComponentOne = styled.div`
   }
   p{
     padding-left: 50px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -275,7 +269,6 @@ const View = styled.div`
   margin-right: 49.64px;
   /* margin-top: 30px; */
   h6 {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 9px;
@@ -442,7 +435,6 @@ const Div = styled.div`
   margin-top: 16px;
   margin-left: 22px;
   h1 {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -451,7 +443,6 @@ const Div = styled.div`
     margin-right: 7px;
   }
   h4 {
-    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -461,7 +452,6 @@ const Div = styled.div`
     color: #0F1231;
   }
   p {
-    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     font-style: normal;

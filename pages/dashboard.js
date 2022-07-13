@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import RightContentDetails from '../components/RightContentDetails';
+import styles from '../styles/Home.module.css';
 
 export default function Dashboard() {
   return(
@@ -9,42 +10,44 @@ export default function Dashboard() {
                 <ImageContainer>
                     <img src="/dashboard-logo.png" alt="Logo" />
                 </ImageContainer>
-                <Dash>
-                    <DashIcon>
-                        <img src="/home.png" alt="Home" />
-                    </DashIcon>
-                    <DashText><h1>Dashboard</h1></DashText>
-                </Dash>
-                <Access>
-                    <AccessIcon>
-                        <img src="/pen.png" alt="Pen" />
-                    </AccessIcon>
-                    <AccessText><h1>Access</h1></AccessText>
-                </Access>
-                <ActivityCenter>
-                    <ActivityIcon>
-                        <img src="/activity.png" alt="Activity" />
-                    </ActivityIcon>
-                    <ActivityText><h1>Activity Center</h1></ActivityText>
-                </ActivityCenter>
-                <Support>
-                    <SupportIcon>
-                        <img src="/support.png" alt="Activity" />
-                    </SupportIcon>
-                    <SupportText><h1>Support</h1></SupportText>
-                </Support>
-                <Profile>
-                    <ProfileIcon>
-                        <img src="/profile.png" alt="Activity" />
-                    </ProfileIcon>
-                    <ProfileText><h1>Profile</h1></ProfileText>
-                </Profile>
-                <Signout>
-                    <SignoutIcon>
-                        <img src="/signout.png" alt="Activity" />
-                    </SignoutIcon>
-                    <SignoutText><h1>Sign out</h1></SignoutText>
-                </Signout>
+                <LinksContainer>
+                    <Dash>
+                        <ImageDiv>
+                            <img src="/home.png" alt="" />
+                        </ImageDiv>
+                        <div><h5>Dashboard</h5></div>
+                    </Dash>
+                    <Dash>
+                        <ImageDiv>
+                            <img src="/pen.png" alt="" />
+                        </ImageDiv>
+                        <div><h5>Assess</h5></div>
+                    </Dash>
+                    <Dash>
+                        <ImageDiv>
+                            <img src="/activity.png" alt="" />
+                        </ImageDiv>
+                        <div><h5>Activity Center</h5></div>
+                    </Dash>
+                    <Dash>
+                        <ImageDiv>
+                            <img src="/support.png" alt="" />
+                        </ImageDiv>
+                        <div><h5>Support</h5></div>
+                    </Dash>
+                    <Dash>
+                        <ImageDiv>
+                            <img className={styles.this} src="/profile.png" alt="" />
+                        </ImageDiv>
+                        <div><h5>Profile</h5></div>
+                    </Dash>
+                    <Dash>
+                        <ImageDiv>
+                            <img src="/signout.png" alt="" />
+                        </ImageDiv>
+                        <div><h5>Sign out</h5></div>
+                    </Dash>
+                </LinksContainer>
                 {/*  */}
                 <SidebarFoot>
                     <img src="/footer-ball.png" alt="Activity" />
@@ -75,143 +78,52 @@ const Sidebar = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: start;
 `
 
 const ImageContainer = styled.div`
     margin-top: 43px;
 `
 
+const LinksContainer = styled.div`
+    margin-top: 50px;
+    width: 150px;
+    height: 400px;
+`
+
 const Dash = styled.div`
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    cursor: pointer;
-`
-const DashIcon = styled.div`
-    margin-right: 17px;
-`
-
-const DashText = styled.div`
-    margin-top: 3px;
-    h1 {
-        font-weight: 700;
-        font-size: 20px;
+    padding: 0;
+    margin-bottom: 35px;
+    /* div {
+        margin: 0;
+        padding: 0;
+    } */
+    h5 {
+        margin: 0;
+        padding:0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
         line-height: 101.5%;
         color: #707070;
     }
 `
 
-const Access = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    cursor: pointer;
-`
-
-const AccessIcon = styled.div`
+const ImageDiv = styled.div`
     margin-right: 17px;
-`
-
-const AccessText = styled.div`
-    margin-top: 3px;
-    h1 {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 101.5%;
-        color: #707070;
-    }
-`
-
-const ActivityCenter = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    cursor: pointer;
-`
-const ActivityIcon = styled.div`
-    margin-right: 17px;
-`
-
-const ActivityText = styled.div`
-    margin-top: 3px;
-    h1 {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 101.5%;
-        color: #707070;
-    }
-`
-
-const Support = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    cursor: pointer;
-`
-
-const SupportIcon = styled.div`
-    margin-right: 17px;
-`
-
-const SupportText = styled.div`
-    margin-top: 3px;
-    h1 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 101.5%;
-    color: #707070;
-    }
 `
 
 const Profile = styled.div`
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 5px;
-    cursor: pointer;
-`
-
-const ProfileIcon = styled.div`
-    margin-right: 17px;
+    color: #707070;
     img {
+        margin: 0;
+        padding: 0;
         width: 20px;
         height: 20px;
-    }
-`
-
-const ProfileText = styled.div`
-    margin-top: 3px;
-    h1 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 101.5%;
-    color: #707070;
-    }
-`
-
-const Signout = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    cursor: pointer; 
-`
-
-const SignoutIcon = styled.div`
-    margin-right: 17px;
-`
-
-const SignoutText = styled.div`
-    margin-top: 3px;
-    h1 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 101.5%;
-    color: #707070;
     }
 `
 
