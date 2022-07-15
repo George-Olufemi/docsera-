@@ -691,6 +691,18 @@ color: #FFFFFF;
   height: 20px;
 }
 
+.itemthree {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+}
+
+.itemseven {
+  position: absolute;
+  top: 420px;
+  left: 100px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

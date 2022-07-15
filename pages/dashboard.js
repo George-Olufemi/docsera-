@@ -1,10 +1,17 @@
+import Head from 'next/head';
 import styled from 'styled-components'
 import RightContentDetails from '../components/RightContentDetails';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Dashboard() {
   return(
     <>
+    <Head>
+        <title>Dashboard - Hire prevetted technical writers</title>
+        <meta name="description" content="Docsera - Hire prevetted technical writers" />
+        <link rel="icon" href="/Vector (6).png" />
+    </Head>
         <Container>
             <Sidebar>
                 <ImageContainer>
@@ -35,12 +42,14 @@ export default function Dashboard() {
                         </ImageDiv>
                         <div><h5>Support</h5></div>
                     </Dash>
-                    <Dash>
-                        <ImageDiv>
-                            <img className={styles.this} src="/profile.png" alt="" />
-                        </ImageDiv>
-                        <div><h5>Profile</h5></div>
-                    </Dash>
+                    <Link href="/profile">
+                        <Dash>
+                            <ImageDiv>
+                                <img className={styles.this} src="/profile.png" alt="" />
+                            </ImageDiv>
+                            <div><h5>Profile</h5></div>
+                        </Dash>
+                    </Link>
                     <Dash>
                         <ImageDiv>
                             <img src="/signout.png" alt="" />
@@ -96,6 +105,7 @@ const Dash = styled.div`
     align-items: center;
     padding: 0;
     margin-bottom: 35px;
+    cursor: pointer;
     /* div {
         margin: 0;
         padding: 0;
@@ -108,6 +118,10 @@ const Dash = styled.div`
         font-size: 16px;
         line-height: 101.5%;
         color: #707070;
+        &:hover {
+            color:  #51BE7A;
+            transition: 0.2s ease-in-out;
+        }
     }
 `
 
