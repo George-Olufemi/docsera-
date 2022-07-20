@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background-color: #ECF1F4;
   height: auto;
+  width: 100vw;
 }
 
 .navbar {
@@ -68,6 +69,12 @@
 .hero {
   display: flex;
   /* justify-content: space-between; */
+}
+
+@media (max-width: 700px) {
+  .hero {
+    display: block;
+  }
 }
 
 .main {

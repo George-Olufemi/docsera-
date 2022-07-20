@@ -9,6 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Docsera - Hire prevetted technical writers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Docsera - Hire prevetted technical writers" />
         <link rel="icon" href="/Vector (6).png" />
       </Head>
