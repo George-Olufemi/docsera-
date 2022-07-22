@@ -21,6 +21,9 @@ export default function RightContentDetails() {
           <p>Welcome back!</p>
         </Welcome>
         {/*  */}
+        <CardMobile>
+
+        </CardMobile>
         <Card>
           <LeftContent>
             <h1>Why hire a technical writer on Docsera?</h1>
@@ -130,6 +133,10 @@ const Container = styled.div`
   padding-top: 20px;
   padding-left: 90px;
   padding-right: 90px;
+  @media (max-width :700px) {
+    padding-left: 10px;
+    margin-bottom: 100px;
+  }
 `
 
 const Appbar = styled.div`
@@ -157,6 +164,12 @@ const InputDiv = styled.div`
     border: none;
     outline: none;
     background: #F8FFFA;
+    @media (max-width: 700px) {
+      width: 110px;
+    }
+  }
+  @media (max-width: 700px) {
+    width: 200px;
   }
 `
 
@@ -169,11 +182,19 @@ const Avatar = styled.div`
     font-size: 18px;
     line-height: 27px;
     color: #7B7B7B;
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
   img {
     width: 100%;
     height: 100%;
     margin-top: 23px;
+    @media (max-width: 700px) {
+      margin-top: 0;
+      position: relative;
+      right: -60px;
+    }
   }
 `
 
@@ -205,6 +226,9 @@ const Card = styled.div`
   background: #FFFFFF;
   box-shadow: 0px 7px 20px rgba(151, 151, 151, 0.25);
   border-radius: 10px;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
 const LeftContent = styled.div`
@@ -235,6 +259,9 @@ const CardComponents = styled.div`
   height: 314px;
   display: flex;
   justify-content: space-between;
+  @media (max-width:  700px) {
+    display: block;
+  }
 `
 
 const ComponentOne = styled.div`
@@ -259,6 +286,9 @@ const ComponentOne = styled.div`
     font-size: 15px;
     line-height: 101.5%;
     color: #313131;
+  }
+  @media (max-width: 700px) {
+    margin-bottom: 30px;
   }
 `
 
@@ -308,6 +338,10 @@ const Person = styled.div`
 const ComponentTwo = styled.div`
   width: 269px;
   margin-right: 40px;
+  @media (max-width: 700px) {
+    margin-right: 0;
+    margin-left: ;
+  }
 `
 
 const SubCardOne = styled.div`
@@ -317,6 +351,9 @@ const SubCardOne = styled.div`
   box-shadow: 0px 7px 18px rgba(151, 151, 151, 0.25);
   border-radius: 10px;
   margin-bottom: 40px;
+  @media (max-width: 700px) {
+    width: 95vw;
+  }
 `
 
 const Head = styled.div`
@@ -464,6 +501,10 @@ const Div = styled.div`
 
 const ComponentThree = styled.div`
   width: 269px;
+  @media (max-width: 700px) {
+    margin-left: ;
+    margin-bottom: 100px;
+  }
 `
 const SubCardThree = styled.div`
   width: 269px;
@@ -472,4 +513,15 @@ const SubCardThree = styled.div`
   box-shadow: 0px 7px 18px rgba(151, 151, 151, 0.25);
   border-radius: 10px;
   margin-bottom: 40px;
+  @media (max-width: 700px) {
+    width: 95vw;
+  }
+`
+
+const CardMobile = styled.div`
+  display: block;
+  height: auto;
+  background :#FFFFFF;
+  box-shadow: 0px 7px 20px rgba(151, 151, 151, 0.25);
+  border-radius: 10px;
 `

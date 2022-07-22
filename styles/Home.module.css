@@ -666,13 +666,6 @@
   margin-top: 30px;
 }
 
-.cardsection2 {
-  display: block;
-  padding: 0;
-  margin-bottom: 20px;
-  padding-left: 13px;
-}
-
 @media screen and (max-width: 700px) {
   .card1 {
     margin-bottom: 20px;
@@ -688,6 +681,12 @@
   .card2 {
     margin-bottom: 20px;
     width: 370px;
+  }
+  .cardsection2 {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-left: 13px;
   }
 }
 

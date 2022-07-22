@@ -71,6 +71,9 @@ const Sidebar = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: start;
+    @media (max-width: 700px) {
+        display: none;
+    }
 `
 
 const ImageContainer = styled.div`
