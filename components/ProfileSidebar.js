@@ -70,6 +70,9 @@ const LeftContainer = styled.div`
     background-color: #F9F9F9;
     position: fixed;
     top: 0;
+    @media (max-width: 700px) {
+        display: none;
+    }
 `
 
 const Logo = styled.div`

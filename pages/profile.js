@@ -10,6 +10,7 @@ export default function profile({ children  }) {
     <>
         <Head>
         <title>Profile - Hire prevetted technical writers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Docsera - Hire prevetted technical writers" />
         <link rel="icon" href="/Vector (6).png" />
         </Head>
@@ -29,7 +30,7 @@ export default function profile({ children  }) {
 
 const Container = styled.div`
     display: flex;
-`
+` 
 
 const RightContainer = styled.div`
     margin-left: 280px;

@@ -4,7 +4,25 @@
   box-sizing: border-box;
   background-color: #ECF1F4;
   height: auto;
-  width: 100vw;
+  width: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .navbar {
@@ -17,13 +35,27 @@
   padding-top: 41px;
 }
 
+
 .logo {
   padding-left: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    padding: 30px;
+  }
 }
 
 .links {
   display: flex;
   padding-right: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .links {
+    padding-right: 30px;
+    display: none;
+  }
 }
 
 .button1 {
@@ -83,15 +115,34 @@
   /* margin-right: 100px;; */
 }
 
+@media screen and (max-width: 700px) {
+  .main {
+    padding-left: 30px;
+  }
+  .subText {
+    font-size: 20px
+  }
+}
+
 .orient {
   padding-top: 145px;
 }
 
 .headerText {
-  font-size: 600;
+  font-weight: 600;
   font-size: 58px;
   line-height: 120.5%;
   margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .headerText {
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .secondContainer {
+    display: none;
+  }
 }
 
 .subText {
@@ -167,6 +218,13 @@
   margin-right: 23.26px;
 }
 
+@media screen and (max-width: 700px) {
+  .kompLogo {
+    margin-right: 10px;
+    padding-bottom: 15px;
+  }
+}
+
 .secondContainer {
   padding-top: 6px;
   margin-right: 30px;
@@ -225,6 +283,13 @@
   animation: up-down 10s linear infinite;
 }
 
+@media screen and (max-width: 700px) {
+  .fill {
+    position: absolute;
+    top: 900px;
+  }
+}
+
 @keyframes up-down {
   0%, 100% {
     transform: translateY(-9%)
@@ -242,6 +307,12 @@
   height: auto;
   background-color: white;
   padding-bottom: 90px;
+}
+
+@media screen and (max-width: 700px) {
+  .bodySection {
+    padding-bottom: 40px;
+  }
 }
 
 .hire {
@@ -262,12 +333,27 @@
   padding-top: 40px;
 }
 
+@media screen and (max-width: 700px) {
+  .hireText {
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 10px;
+  }
+}
+
 .subHireText {
   font-weight: 600;
   text-align: center;
   font-size: 19px;
   line-height: 120.5%;
   color: rgb(32, 32, 32);
+}
+
+@media screen and (max-width: 700px) {
+  .subHireText {
+    font-weight: 300;
+    font-size: 16px;
+  }
 }
 
 .box {
@@ -277,6 +363,14 @@
   margin-top: 90px;
   margin-left: 200px;
   margin-right: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    display: block;
+    margin-top: 50px;
+    margin-left: 80px;
+  }
 }
 
 .firstbox {
@@ -471,6 +565,20 @@
   transform: translate(9px, -5px);
 }
 
+@media screen and (max-width: 700px) {
+  .firstbox {
+    margin-bottom: 30px;
+  }
+
+  .secondbox {
+    margin-bottom: 30px;
+  }
+
+  .thirdbox {
+    margin-bottom: 30px;
+  }
+}
+
 .pensvg {
   width: 40px;
 }
@@ -487,6 +595,15 @@
   padding-left: 242px;
   padding-right: 242px;
   margin-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .cardsection1 {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-left: 13px;
+  }
 }
 
 .card1 {
@@ -549,10 +666,42 @@
   margin-top: 30px;
 }
 
+.cardsection2 {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-left: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  .card1 {
+    margin-bottom: 20px;
+    width: 370px
+  }
+  .cardheading {
+    padding-top: 30px;
+    padding-left: 33px;
+  }
+  .cardtext {
+    padding-left: 33px;
+  }
+  .card2 {
+    margin-bottom: 20px;
+    width: 370px;
+  }
+}
+
 .section2 {
   display: flex;
   justify-content: center;
   margin-top: 150px;
+}
+
+@media screen and (max-width: 700px) {
+  .section2 {
+    display: block;
+    margin-top: 70px;
+  }
 }
 
 .openleft {
@@ -584,6 +733,22 @@ font-weight: 400;
 font-size: 15px;
 line-height: 120.5%;
 color: #4B4B4B;
+}
+
+@media screen and (max-width: 700px) {
+  .openleft {
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .openright {
+    margin-left: 30px;
+  }
+  .persondetails {
+    width: 390px;
+  }
+  .whyhire {
+    font-size: 40px;
+  }
 }
 
 .button {
@@ -691,6 +856,39 @@ color: #FFFFFF;
   line-height: 139%;
   padding-left: 60px;
   color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .lastcardbox {
+    display: block;
+    padding-left: 10px;
+  }
+  .lastcard1 {
+    width: 390px;
+    height: 249px;
+    margin-bottom: 20px;
+  }
+  .lastcard2 {
+    width: 390px;
+    height: 249px;
+    margin-left: 0;
+  }
+  .lastcardheadertext1 {
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .lastcardtext1 {
+    padding-top: 2px;
+    padding-left: 20px;
+  }
+  .lastcardheadertext2 {
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .lastcardtext2 {
+    padding-top: 2px;
+    padding-left: 20px;
+  }
 }
 
 .this {
