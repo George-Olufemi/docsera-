@@ -21,7 +21,7 @@ export default function ProfileSidebar() {
                     {/*  */}
                     <Items>
                         <ItemOne>
-                        <img src="/cart.png" alt="Grid" />
+                        <img src="/Cart.png" alt="Grid" />
                         <img className={styles.itemthree} src="/top.png" alt="Grid" />
                         </ItemOne>
                         <ItemOne>
